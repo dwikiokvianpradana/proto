@@ -1,16 +1,7 @@
 'use client'
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import ReactPlayer from "react-player";
 
-const data = [
-  { name: "Jan", server: 400, client: 240 },
-  { name: "Feb", server: 300, client: 139 },
-  { name: "Mar", server: 200, client: 980 },
-  { name: "Apr", server: 278, client: 390 },
-  { name: "May", server: 189, client: 480 },
-  { name: "Jun", server: 239, client: 380 },
-]
 
 export function AppPerformance() {
   return (
