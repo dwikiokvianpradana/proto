@@ -1,7 +1,6 @@
 'use client'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { TableReports } from "@/components/tablereport";
-import { TableReportsKecelakaan } from "@/components/tablereportkecelakaan";
 
 export function Insights() {
   return (
