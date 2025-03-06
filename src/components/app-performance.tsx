@@ -1,6 +1,7 @@
 'use client'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts"
+import ReactPlayer from "react-player";
 
 const data = [
   { name: "Jan", server: 400, client: 240 },
@@ -16,56 +17,50 @@ export function AppPerformance() {
     <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
       <Card>
         <CardHeader>
-          <CardTitle>Server Response Time</CardTitle>
-          <CardDescription>Average: 250ms</CardDescription>
+          <CardTitle>CCTV 1</CardTitle>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={200}>
-            <LineChart data={data}>
-              <XAxis dataKey="name" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
-              <YAxis
-                stroke="#888888"
-                fontSize={12}
-                tickLine={false}
-                axisLine={false}
-                tickFormatter={(value) => `${value}ms`}
-              />
-              <Tooltip />
-              <Line type="monotone" dataKey="server" stroke="#8884d8" activeDot={{ r: 8 }} />
-            </LineChart>
-          </ResponsiveContainer>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
         </CardContent>
       </Card>
       <Card>
         <CardHeader>
-          <CardTitle>Client-side Performance</CardTitle>
-          <CardDescription>Average Load Time: 1.2s</CardDescription>
+          <CardTitle>CCTV 2</CardTitle>
         </CardHeader>
         <CardContent>
-          <ResponsiveContainer width="100%" height={200}>
-            <LineChart data={data}>
-              <XAxis dataKey="name" stroke="#888888" fontSize={12} tickLine={false} axisLine={false} />
-              <YAxis
-                stroke="#888888"
-                fontSize={12}
-                tickLine={false}
-                axisLine={false}
-                tickFormatter={(value) => `${value}ms`}
-              />
-              <Tooltip />
-              <Line type="monotone" dataKey="client" stroke="#82ca9d" activeDot={{ r: 8 }} />
-            </LineChart>
-          </ResponsiveContainer>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
         </CardContent>
       </Card>
       <Card>
         <CardHeader>
-          <CardTitle>Error Rate</CardTitle>
-          <CardDescription>Last 30 days</CardDescription>
+          <CardTitle>CCTV 3</CardTitle>
         </CardHeader>
         <CardContent>
-          <div className="text-4xl font-bold">0.12%</div>
-          <p className="text-xs text-muted-foreground">-0.05% from last month</p>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>CCTV 4</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>CCTV 5</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
+        </CardContent>
+      </Card>
+      <Card>
+        <CardHeader>
+          <CardTitle>CCTV 6</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <ReactPlayer url='https://www.youtube.com/watch?v=rnXIjl_Rzy4' playing={true} width={280}  />
         </CardContent>
       </Card>
     </div>

@@ -11,7 +11,7 @@ export default function Dashboard() {
       <Tabs defaultValue="user-stats" className="space-y-4">
         <TabsList>
           <TabsTrigger value="user-stats">Alert Summary</TabsTrigger>
-          <TabsTrigger value="app-performance">App Performance</TabsTrigger>
+          <TabsTrigger value="app-performance">CCTV</TabsTrigger>
           <TabsTrigger value="insights">Insights</TabsTrigger>
         </TabsList>
         <TabsContent value="user-stats">
