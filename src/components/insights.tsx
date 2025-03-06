@@ -15,18 +15,6 @@ export function Insights() {
           <TableReports/>
         </CardContent>
       </Card>
-      <div className="mt-6">
-
-      </div>
-      <Card>
-        <CardHeader>
-          <CardTitle>Kecelakaan</CardTitle>
-          <CardDescription>Total kecelakaan yang telah dilakukan berdasarkan CCTV</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <TableReportsKecelakaan/>
-        </CardContent>
-      </Card>
     </div>
   )
 }
