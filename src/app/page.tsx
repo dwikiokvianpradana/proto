@@ -3,6 +3,8 @@ import { UserFeedback } from "@/components/user-feedback";
 import { Insights } from "@/components/insights";
 import { AppPerformance } from "@/components/app-performance";
 import { UserStats } from "@/components/user-stats";
+import { TableReportsKecelakaan } from "@/components/tablereportkecelakaan";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Dashboard() {
   return (
@@ -12,7 +14,8 @@ export default function Dashboard() {
         <TabsList>
           <TabsTrigger value="user-stats">Alert Summary</TabsTrigger>
           <TabsTrigger value="app-performance">CCTV</TabsTrigger>
-          <TabsTrigger value="insights">Insights</TabsTrigger>
+          <TabsTrigger value="insights">Pelanggaran</TabsTrigger>
+          <TabsTrigger value="kecelakaan">Kecelakaan</TabsTrigger>
         </TabsList>
         <TabsContent value="user-stats">
           <UserStats />
@@ -25,6 +28,17 @@ export default function Dashboard() {
         </TabsContent>
         <TabsContent value="user-feedback">
           <UserFeedback />
+        </TabsContent>
+        <TabsContent value="kecelakaan">
+          <Card>
+            <CardHeader>
+              <CardTitle>Kecelakaan</CardTitle>
+              <CardDescription>Total kecelakaan yang telah terjadi berdasarkan CCTV</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <TableReportsKecelakaan />/
+            </CardContent>
+          </Card>
         </TabsContent>
       </Tabs>
     </div>
